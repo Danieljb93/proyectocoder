@@ -17,3 +17,7 @@ def Leer_alumnos(request):
     }
 
     return render(request, 'plantilla.html', contexto)
+
+
+def index(request):
+    return render(request, "index.html")
