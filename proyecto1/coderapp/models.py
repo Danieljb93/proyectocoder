@@ -1,19 +1,19 @@
 from django.db import models
 
-class Profesor(models.Model):
+class Vendedor(models.Model):
 
     nombre = models.CharField(max_length=20)
     apellido = models.CharField(max_length=30)
     email = models.EmailField()
 
     class Meta:
-        verbose_name_plural = "Profesores"
+        verbose_name_plural = "Vendedores"
         ordering=["nombre"]
 
     def __str__(self):
         return f"{self.nombre}, {self.apellido}"
     
-class Estudiante(models.Model):
+class Cliente(models.Model):
     nombre = models.CharField(max_length=20)
     apellido = models.CharField(max_length=20)
     email = models.EmailField()
@@ -22,19 +22,19 @@ class Estudiante(models.Model):
         return f"{self.nombre}, {self.apellido}"
     
 
-class Curso(models.Model):
+class Producto(models.Model):
     nombre = models.CharField(max_length=40)
-    camada = models.IntegerField()
+    cantidad = models.IntegerField()
 
     def __str__(self):
-        return f"{self.nombre} -- {self.camada}"
+        return f"{self.nombre} -- {self.cantidad}"
 
 
-class Entregable(models.Model):
+class Venta(models.Model):
     nombre = models.CharField(max_length=40)
-    fechaDeEntrega = models.DateField()
+    fechaDeVenta = models.DateField()
 
     def __str__(self):
-        return f"{self.nombre} -- {self.fechaDeEntrega}"
+        return f"{self.nombre} -- {self.fechaDeVenta}"
     
 

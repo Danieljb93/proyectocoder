@@ -1,9 +1,9 @@
 from django.contrib import admin
 
-from coderapp.models import Profesor, Estudiante, Curso, Entregable
+from coderapp.models import Vendedor, Cliente, Producto, Venta
 
-admin.site.register(Profesor)
-admin.site.register(Estudiante)
-admin.site.register(Curso)
-admin.site.register(Entregable)
+admin.site.register(Vendedor)
+admin.site.register(Cliente)
+admin.site.register(Producto)
+admin.site.register(Venta)
 

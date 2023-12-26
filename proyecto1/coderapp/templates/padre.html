@@ -25,11 +25,12 @@
         <nav class="navbar navbar-light bg-light static-top">
             <div class="container">
                 <a class="navbar-brand" href="{% url 'index' %}">Inicio</a>
-                <a class="navbar-brand" href="{% url 'profesores' %}">Profesores</a>
-                <a class="navbar-brand" href="{% url 'estudiantes' %}">Estudiantes</a>
-                <a class="navbar-brand" href="{% url 'cursos' %}">Cursos</a>
-                <a class="navbar-brand" href="{% url 'entregables' %}">Entregables</a>
-                <a class="btn btn-primary" href="#signup">Iniciar sesión</a>
+                <a class="navbar-brand" href="{% url 'vendedores' %}">Vendedores</a>
+                <a class="navbar-brand" href="{% url 'clientes' %}">Clientes</a>
+                <a class="navbar-brand" href="{% url 'productos' %}">Productos</a>
+                <a class="navbar-brand" href="{% url 'ventas' %}">Ventas</a>
+
+                <a class="btn btn-primary" href="{% url 'nuevo_vendedor'%}">Registrar vendedor</a>
             </div>
         </nav>
         <!-- Masthead-->
