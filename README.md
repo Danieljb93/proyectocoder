@@ -4,7 +4,9 @@ proyecto en django
 
 # para acceder a las urls:
 
--   ingresar a la url: http://localhost:8000/coder-app/busquedaProducto
+-   ingresar a la url: http://localhost:8000/coder-app/
+-   usuario: admin
+-   contraseña: admin54321
 
 # Sistema de Gestión de Ventas
 

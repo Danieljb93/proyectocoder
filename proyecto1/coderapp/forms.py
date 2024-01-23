@@ -16,4 +16,13 @@ class NuevoCliente(forms.Form):
     apellido = forms.CharField(max_length=20)
     email = forms.EmailField()
 
+class VendedorFormulario(forms.Form):
+    nombre = forms.CharField(max_length=30)
+    apellido = forms.CharField(max_length=30)
+    email = forms.EmailField()
+
+
+class AvatarFormulario(forms.Form):
+    image = forms.ImageField()
+
 

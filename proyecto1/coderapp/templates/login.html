@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body></body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% load static %}
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>logout</title>
+
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" type="text/css" />
+        <!-- Google fonts-->
+        <link
+            href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic"
+            rel="stylesheet"
+            type="text/css"
+        />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="{% static 'css/styles.css'%}" rel="stylesheet" />
+    </head>
+    <body class="d-flex flex-column min-vh-100">
+        <!-- Navigation-->
+        <nav class="navbar navbar-light navbar-blue static-top">
+            <div class="container">
+                <!-- ... (rest of your navigation code) ... -->
+            </div>
+        </nav>
+
+        <main class="container mt-4 d-flex flex-column align-items-center">
+            <div class="container mt-4">
+                <h1>Iniciar sesión</h1>
+                <form method="post" class="mb-4">
+                    {% csrf_token %} {{ form.as_p }}
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+                <a href="{% url 'index' %}" class="btn btn-secondary">Ir al inicio</a>
+            </div>
+        </main>
+
+        <!-- Footer-->
+        <footer class="footer bg-light mt-auto">
+            <!-- ... (rest of your footer code) ... -->
+        </footer>
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- SB Forms JS -->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>

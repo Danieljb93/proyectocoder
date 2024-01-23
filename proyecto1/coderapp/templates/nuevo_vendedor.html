@@ -7,7 +7,7 @@
     </head>
 
     <body>
-        <h1>Formulario de ventas</h1>
+        <h1>nuevo vendedor</h1>
         <form action="{% url 'nuevo_vendedor' %}" method="POST">
             {% csrf_token%}
             <!-- aca va nuestro formulario-->
@@ -16,5 +16,6 @@
             </table>
             <input type="submit" value="Enviar" />
         </form>
+        <a href="{% url 'index' %}">Ir al inicio</a>
     </body>
 </html>

@@ -1,4 +1,38 @@
 {% extends 'padre.html' %} {% load static %} {% block contenidoQueCambia %}
-<h1>Información de la página de inicio</h1>
-<h2>Se hereda de padre.html</h2>
+<div class="container">
+    <h1 class="mt-4">Información Principal</h1>
+    {{ mensaje }}
+
+    <!-- Descripción y foto -->
+    <div class="row mt-4">
+        <div class="col-md-4">
+            <img src="{% static 'assets/img/yo.jpeg' %}" alt="Mi Foto" class="img-fluid" style="max-width: 50%" />
+        </div>
+        <div class="col-md-8">
+            <p>
+                ¡Hola! Soy Daniel Andrés Jurado Benavides, un apasionado desarrollador web con una sólida formación académica en informática
+                y un máster en educación. Me especializo en proyectos emocionantes basados en Django con Python, donde combino mis
+                habilidades técnicas con mi enfoque educativo. Con más de un año de experiencia en el estudio dedicado al desarrollo web y
+                Python, me embarco en desafiantes proyectos que buscan fusionar la innovación tecnológica con la enseñanza. Mi objetivo es
+                crear experiencias en línea atractivas y funcionales, utilizando las últimas tecnologías y prácticas de desarrollo. Este
+                espacio es un vistazo a mi trabajo, donde compartiré información interesante y detallada sobre los proyectos en los que
+                estoy involucrado. Explorarás no solo el resultado final, sino también el proceso creativo y técnico detrás de cada
+                iniciativa. ¡Bienvenido a mi mundo de desarrollo web, donde la pasión y la experiencia se encuentran para crear soluciones
+                impactantes!
+            </p>
+        </div>
+    </div>
+
+    <!-- Video -->
+    <div class="row mt-4">
+        <h2>Video Tutorial</h2>
+        <div class="col-md-12">
+            <!-- Asegúrate de ajustar la ruta del video cuando lo subas -->
+            <video controls class="img-fluid">
+                <source src="{% static 'assets/video/VideoFuncionamiento.mp4' %}" type="video/mp4" />
+                Tu navegador no soporta el elemento de video.
+            </video>
+        </div>
+    </div>
+</div>
 {% endblock %}

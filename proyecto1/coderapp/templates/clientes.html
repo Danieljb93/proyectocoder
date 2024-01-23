@@ -1,5 +1,9 @@
 {% extends 'padre.html' %} {% load static %} {% block contenidoQueCambia %}
-<h1>Información de la página de vista clientes</h1>
-<h2>Registrar nuevo cliente</h2>
-<a class="btn btn-primary" href="{% url 'nuevo_cliente' %}">Registrar Cliente</a>
+<div class="container">
+    <h1 class="mt-5">Clientes</h1>
+
+    <h2>¿Qué quieres hacer?</h2>
+    <a class="btn btn-primary mr-2" href="{% url 'nuevo_cliente' %}">Registrar Cliente</a>
+    <a class="btn btn-primary" href="{% url 'leer_clientes' %}">Ver Clientes</a>
+</div>
 {% endblock %}
